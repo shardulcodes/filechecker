@@ -1,0 +1,16 @@
+{
+  "filename": "b171b719-b9ba-4405-9500-6d70146e6b8d_flag.png",
+  "filetype": "image/png",
+  "filesize": 346,
+  "created": "2025-07-08 17:29:50.261763",
+  "modified": "2025-07-08 17:29:50.262759",
+  "md5": "22a58459dcec3b06379061aa8468dd99",
+  "sha1": "b4cc370594ab2ff5862a101c2eb8a9ef2f460588",
+  "sha256": "ab12c1836095a3ed25c262fb9ed06a6dee0bd93873731b8c86e1b38a422dd6eb",
+  "virustotal": "Not found or error",
+  "entropy": 6.927,
+  "suspicious_strings_preview": "IHDR\nPLTE\ntRNS\n\tpHYs\nIDAT8\ncU`Ai\t\nn@!i\nIEND\n",
+  "suspicion_score": 0,
+  "heuristic_flags": [],
+  "is_suspicious": false
+}

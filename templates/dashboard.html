@@ -1,0 +1,109 @@
+{% extends "layout.html" %} {% block title %}Dashboard - File Inspector{%
+endblock %} {% block content %}
+<div class="container mt-4">
+  <h2 class="mb-4">📁 File Inspection Dashboard</h2>
+
+  <!-- File Info -->
+  <div class="card mb-4 shadow-sm">
+    <div class="card-header bg-primary text-white">File Information</div>
+    <div class="card-body">
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+          <strong>Filename:</strong> {{ data.filename }}
+        </li>
+        <li class="list-group-item">
+          <strong>File Type:</strong> {{ data.filetype }}
+        </li>
+        <li class="list-group-item">
+          <strong>Size:</strong> {{ data.filesize }} bytes
+        </li>
+        <li class="list-group-item">
+          <strong>Created:</strong> {{ data.created }}
+        </li>
+        <li class="list-group-item">
+          <strong>Modified:</strong> {{ data.modified }}
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Hashes & VirusTotal -->
+  <div class="card mb-4 shadow-sm">
+    <div class="card-header bg-dark text-white">
+      Hashes & Threat Intelligence
+    </div>
+    <div class="card-body">
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item"><strong>MD5:</strong> {{ data.md5 }}</li>
+        <li class="list-group-item"><strong>SHA1:</strong> {{ data.sha1 }}</li>
+        <li class="list-group-item">
+          <strong>SHA256:</strong> {{ data.sha256 }}
+        </li>
+      </ul>
+      {% if data.virustotal_link %}
+      <div class="mt-3">
+        <strong>VirusTotal:</strong> {{ data.virustotal_positives }} positives
+        <br />
+        <a
+          href="{{ data.virustotal_link }}"
+          target="_blank"
+          class="btn btn-sm btn-outline-danger mt-2"
+          >🔗 View on VirusTotal</a
+        >
+      </div>
+      {% endif %}
+    </div>
+  </div>
+
+  <!-- Static Analysis -->
+  <div class="card mb-4 shadow-sm">
+    <div class="card-header bg-warning">Static Analysis</div>
+    <div class="card-body">
+      <p><strong>Entropy:</strong> {{ data.entropy }}</p>
+      <p><strong>Suspicious Strings Preview:</strong></p>
+      <pre>{{ data.suspicious_strings_preview }}</pre>
+    </div>
+  </div>
+
+  <!-- Heuristic Analysis -->
+  <div class="card mb-4 shadow-sm">
+    <div class="card-header bg-danger text-white">Heuristic Analysis</div>
+    <div class="card-body">
+      <h5>
+        Suspicion Score:
+        <span
+          class="badge {% if data.suspicion_score < 40 %}bg-success {% elif data.suspicion_score < 75 %}bg-warning text-dark {% else %}bg-danger {% endif %}"
+        >
+          {{ data.suspicion_score }}/100
+        </span>
+      </h5>
+      <ul class="mt-3">
+        {% for reason in data.heuristic_flags %}
+        <li>{{ reason }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+
+  <!-- Actions -->
+  <div class="d-flex gap-2 mt-4 justify-content-end">
+    {% if pdf_available %}
+    <a
+      href="{{ url_for('download_pdf', report_id=report_id) }}"
+      class="btn btn-outline-primary"
+      >📥 Download PDF</a
+    >
+    {% endif %} {% if html_available %}
+    <a
+      href="{{ url_for('view_report', report_id=report_id) }}"
+      class="btn btn-outline-secondary"
+      >📄 View Full HTML</a
+    >
+    {% endif %}
+
+    <a href="{{ url_for('index') }}" class="btn btn-outline-dark"
+      >🔄 Analyze Another File</a
+    >
+  </div>
+</div>
+{% endblock %}

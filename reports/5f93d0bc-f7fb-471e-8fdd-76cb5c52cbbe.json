@@ -1,0 +1,16 @@
+{
+  "filename": "5f93d0bc-f7fb-471e-8fdd-76cb5c52cbbe_toc.txt",
+  "filetype": "text/plain",
+  "filesize": 828,
+  "created": "2025-07-08 17:27:23.048783",
+  "modified": "2025-07-08 17:27:23.049412",
+  "md5": "8039f45c02fa9acf8039cecac43e64b0",
+  "sha1": "1eb2ac3f8a735a950a607ceccd0a89cb4cdb981b",
+  "sha256": "8ed192f98dcbc840d86fdcb38b08a5fbb9eadf91a458d6a29308a38de13d9391",
+  "virustotal": "Not found or error",
+  "entropy": 4.688,
+  "suspicious_strings_preview": "delta(q1,1)\nif you're in state q1 ad read 1\nwrite 0\nmove right\ngo to state q2\nturing machine is a 7 tuple\nQ: set of states\nSigma: Input alphabet(what symbols that can appear inn the input)\nr : tape alphabet (symbols that can appear on the tape)\ndelta: transition function\nq0 : start state\nq_accept: accepting state\nq_reject: rejecting state\nSolvable Problems\n->A turing machine will always halt and give the correct answer : either YES or NO\n-> A language is called recursive if there exists a Turing Machine which always halts and accepts or rejects strings in that language\nSemi Solvable Problems\n-> The Turing Machine halts and says YES, if the answer is YES.\n-> But if answer is NO, Run forever or halt and say NO(but not guaranteed)\n->only work for some inputs and not all\n",
+  "suspicion_score": 0,
+  "heuristic_flags": [],
+  "is_suspicious": false
+}

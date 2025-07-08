@@ -1,0 +1,35 @@
+delta(q1,1)
+
+if you're in state q1 ad read 1
+
+write 0
+move right
+go to state q2
+
+turing machine is a 7 tuple
+
+Q: set of states
+Sigma: Input alphabet(what symbols that can appear inn the input)
+
+r : tape alphabet (symbols that can appear on the tape)
+
+delta: transition function
+
+q0 : start state
+q_accept: accepting state
+q_reject: rejecting state
+
+
+Solvable Problems
+->A turing machine will always halt and give the correct answer : either YES or NO
+-> A language is called recursive if there exists a Turing Machine which always halts and accepts or rejects strings in that language
+
+Semi Solvable Problems
+-> The Turing Machine halts and says YES, if the answer is YES.
+-> But if answer is NO, Run forever or halt and say NO(but not guaranteed)
+->only work for some inputs and not all
+
+
+
+
+

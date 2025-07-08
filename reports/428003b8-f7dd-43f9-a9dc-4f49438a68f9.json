@@ -1,0 +1,18 @@
+{
+  "filename": "428003b8-f7dd-43f9-a9dc-4f49438a68f9_Trophy_HACKMIT_CTF.jpg",
+  "filetype": "image/jpeg",
+  "filesize": 182086,
+  "created": "2025-07-08 17:28:17.792968",
+  "modified": "2025-07-08 17:28:17.793983",
+  "md5": "7ee5cc20a1e7e2f86cfdbd21abc86d70",
+  "sha1": "d09a561eeff741279e125e757b1676f75e2ce50c",
+  "sha256": "3c0568595bb6e6ba78f3fd5b0d2d5c62aa6b2b4c0b5612435241e886626587b2",
+  "virustotal": "Not found or error",
+  "entropy": 7.985,
+  "suspicious_strings_preview": "JFIF\n6*&&*6>424>LDDL_Z_||\n6*&&*6>424>LDDL_Z_||\n''_%\nHpwp\nV,@%\n%[\t*\nVR,,\nJ%ft\n/'_-`+\nb&PD\nIPX3\n]\\=Q\n96tABV\nLlFI\na,%-Y\nJ.!r\n.9Y!!9\nXRGf\\]\n.vD,3\nz#a`\n,hQ2\n\t/o7J\n-Lva\nK, Y\nAx{y\ng,/w\n~YcW\nbe!`\\r,\nKK2X\n(\tBZ\nq.4*\n%/_/\\IH\niB(J%\t\n%KF2\\\nI'3:\nhtg\\\nervqt&\n$&la\n<6rV\nzVYx\n!&DJ\n%.4j\n/bTr\n,IaVc\nL.Ip\nQ*PEuQ$\n,Fl*d\n]g?G5L2\ndceX\n)A)2\nYYsh\n`YF4I\nb Y\"\nfvRYIj!W\n6k6q\n{kzg\no~ZvMP\n<n:YQ\n{,,dcu\n>:,P\n&9C_?V5\ncK#9.{\n%Ur5\n9cF9c\nS)}]\n'V|<z\nd5mRP\n^]9K1\nJ\tg-\nN9q:s\n;,UJ\no/L{\nh%Y@*\nYEYH\t\nZzum]\n&xfz9\n]=|r\nd2!e\n<3_G<r\n_/l[*\nsust\n-ysDY\nuqzX\ncxti\nIFf~\nMN}m\nsCRur\n &6,\nNoG:\nkK2\\nQ5i\n_/?E\n)Q(Rbe\n9f[.w\nQu&xt\n7)`$e\nQ*\tH\n@UAR\nSP\"(\nq^~Zy\n|7b{\nf0gW\ntxq}\n.#$,\nOm/>\n&*+^t\n.wY6\n3=,<\nqTRVA\nz{ye\nVSfZ\ncfn::4'&\n77O*Hf\nl7CY\npY.j\n^VzC\n<sy9\nq=~0\nn9qe\n113v\nYkv4I\nLwNm\ndCo\\\nrE\\j6\nOBpv\n_/u<\nR^={\nGO?L\nb[,*R(\n;-5m\nl0\\M\nlK(,\nK}4g\nj[,*\nys\\onU\n-y&W\n)s5M\n[2g\\\n5'7\\NYu\n[9kG\nk=3V\n[0.X\nH\tGW\nB(J%\nkgW[a5\nhP\t2\natbtc\nguIv1\n\"PXL\nT*RP\ncJ,,*\nHYJ\t-\n!@J@R\nY-K@\n%)(RkJ\nQ)(%\nE\"YT\n\"P\t-\n,)BT\n)(J\"\ncAQhDYB\nZYBP\nDQ)l\nEKB%Hd\n[*!j*\ne.Vd\n@J\tU(\n9%KD\n%\tDPDh\n%DUJ\n\tBX \n@X,\"\n@YB)",
+  "suspicion_score": 30,
+  "heuristic_flags": [
+    "High entropy (7.99) indicates potential obfuscation or packed file."
+  ],
+  "is_suspicious": false
+}

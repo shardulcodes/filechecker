@@ -1,0 +1,55 @@
+{% extends "layout.html" %} {% block title %}Reports - File Inspector{% endblock
+%} {% block content %}
+<div class="container mt-4">
+  <h2 class="mb-4">🗂️ All Reports</h2>
+
+  {% if reports %}
+  <table class="table table-bordered table-striped">
+    <thead class="table-dark">
+      <tr>
+        <th>Report ID</th>
+        <th>Filename</th>
+        <th>Date Generated</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for report in reports %}
+      <tr>
+        <td>{{ report.id }}</td>
+        <td>{{ report.filename or 'Unknown' }}</td>
+        <td>{{ report.date or 'N/A' }}</td>
+        <td>
+          {% if report.has_html %}
+          <a
+            href="{{ url_for('view_report', report_id=report.id) }}"
+            class="btn btn-sm btn-outline-secondary"
+            >🧾 View HTML</a
+          >
+          {% endif %} {% if report.has_pdf %}
+          <a
+            href="{{ url_for('download_pdf', report_id=report.id) }}"
+            class="btn btn-sm btn-outline-primary"
+            >📥 PDF</a
+          >
+          {% endif %}
+          <a
+            href="{{ url_for('download_json', report_id=report.id) }}"
+            class="btn btn-sm btn-outline-success"
+            >📄 JSON</a
+          >
+          <a
+            href="{{ url_for('dashboard', report_id=report.id) }}"
+            class="btn btn-sm btn-outline-dark"
+            >📊 Dashboard</a
+          >
+        </td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  {% else %}
+  <div class="alert alert-info">No reports found.</div>
+  {% endif %}
+</div>
+{% endblock %}
